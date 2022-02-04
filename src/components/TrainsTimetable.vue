@@ -3,12 +3,12 @@
     <div class="form-wrapper">
       <v-select
         v-model="currentStation"
-        :get-option-label="getStationLabel"
+        :get-option-label="(...args) => getStationLabel(...args)"
         :options="stations"
       ></v-select>
       <v-select
         v-model="currentDirection"
-        :reduce="reduceDirection"
+        :reduce="(...args) => reduceDirection(...args)"
         :options="directions"
       ></v-select>
     </div>
