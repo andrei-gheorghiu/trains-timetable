@@ -1,0 +1,56 @@
+@import "mixins";
+@import "vue-select";
+body {
+  background-image: linear-gradient(105deg, #33b7e2, #5e62b0, #dc307c);
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+* {
+  box-sizing: content-box;
+  color: white;
+}
+.card {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+}
+.container {
+  padding-top: 2rem;
+}
+
+.vs__dropdown-toggle {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: white;
+  .vs__selected {
+    color: white;
+  }
+  .vs__search {
+    line-height: 2;
+  }
+  .vs__actions svg {
+    fill: white;
+  }
+}
+.v-select {
+  .vs__dropdown-menu {
+    backdrop-filter: blur(17px);
+  }
+  .vs__dropdown-option {
+    color: white;
+  }
+  .vs-selected {
+    height: 100%;
+  }
+  &.vs--open .vs__selected {
+    top: 0;
+    bottom: 0;
+  }
+}
+.vs__dropdown-menu {
+  @include make-scrollable;
+}

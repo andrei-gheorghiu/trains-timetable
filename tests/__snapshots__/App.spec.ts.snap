@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TrainsTimetable.vue should render without errors 1`] = `
+"<header></header>
+<main>
+  <trains-timetable-stub></trains-timetable-stub>
+</main>
+<footer></footer>"
+`;
