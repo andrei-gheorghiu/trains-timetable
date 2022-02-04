@@ -12,7 +12,7 @@
         :options="directions"
       ></v-select>
     </div>
-    <div class="card">
+    <div class="card table-wrapper">
       <table>
         <thead>
           <tr>
@@ -172,6 +172,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+@import "../style/mixins";
 .container {
   margin: 0 auto;
   max-width: 1000px;
@@ -187,6 +188,13 @@ export default defineComponent({
     }
     &:last-child {
       margin-right: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    > * {
+      width: 100%;
+      margin: 1rem 0 0.5rem;
     }
   }
 }
@@ -215,6 +223,13 @@ table {
   td,
   th {
     padding: 3px 7px;
+  }
+}
+.table-wrapper {
+  overflow-x: auto;
+  @include make-scrollable;
+  table {
+    min-width: 500px;
   }
 }
 .d-flex {
