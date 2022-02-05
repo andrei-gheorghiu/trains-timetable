@@ -3,13 +3,15 @@
     <div class="form-wrapper">
       <v-select
         v-model="currentStation"
-        :get-option-label="(...args) => getStationLabel(...args)"
+        :get-option-label="getStationLabel"
         :options="stations"
+        placeholder="Select a station..."
       ></v-select>
       <v-select
         v-model="currentDirection"
-        :reduce="(...args) => reduceDirection(...args)"
+        :reduce="reduceDirection"
         :options="directions"
+        placeholder="Select a direction..."
       ></v-select>
     </div>
     <div class="card table-wrapper">
@@ -138,7 +140,7 @@ export default defineComponent({
     const iteration = () => {
       tween = gsap.fromTo(
         state.counter,
-        { val: 0, decimals: 0 },
+        { val: 0 },
         {
           val: 20,
           duration: 20,
@@ -197,6 +199,17 @@ export default defineComponent({
       margin: 1rem 0 0.5rem;
     }
   }
+  :deep(.vs__actions) {
+    padding: 4px 12px 0 12px;
+  }
+  :deep(.vs__selected),
+  :deep(.vs__search) {
+    padding-left: 12px;
+  }
+}
+:deep(input::placeholder) {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.65);
 }
 .small {
   font-family: monospace;

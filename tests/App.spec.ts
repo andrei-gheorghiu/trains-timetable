@@ -1,8 +1,6 @@
 import { shallowMount } from "@vue/test-utils";
 import App from "@/App.vue";
 import { createTestingPinia } from "@pinia/testing";
-import axios from "axios";
-import VueAxios from "vue-axios";
 
 describe("TrainsTimetable.vue", () => {
   let consoleSpy: any;
@@ -12,7 +10,7 @@ describe("TrainsTimetable.vue", () => {
     consoleSpy = jest.spyOn(console, "error");
     wrapper = shallowMount(App, {
       global: {
-        plugins: [createTestingPinia(), [VueAxios, axios]],
+        plugins: [createTestingPinia()],
       },
     });
   });

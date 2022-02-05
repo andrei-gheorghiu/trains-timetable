@@ -7,17 +7,17 @@
       background-color: inherit;
     }
     &::-webkit-scrollbar-track:hover {
-      background-color: transparent;
+      background-color: inherit;
     }
     &::-webkit-scrollbar-thumb {
-      background-color: transparent;
+      background-color: #fff;
       border-radius: 6px;
     }
     &:hover::-webkit-scrollbar-thumb {
       background-color: #ffffff99;
     }
     &::-webkit-scrollbar-thumb:hover {
-      background: var(--info);
+      background: #EB5D9B;
     }
     .inner-scroll {
       scrollbar-width: thin;

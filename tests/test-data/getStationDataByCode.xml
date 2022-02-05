@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfObjStationData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://api.irishrail.ie/realtime/">
+    <objStationData>
+        <Servertime>2022-02-05T06:18:55.867</Servertime>
+        <Traincode>E801 </Traincode>
+        <Stationfullname>Dublin Pearse</Stationfullname>
+        <Stationcode>PERSE</Stationcode>
+        <Querytime>06:18:55</Querytime>
+        <Traindate>05 Feb 2022</Traindate>
+        <Origin>Bray</Origin>
+        <Destination>Malahide</Destination>
+        <Origintime>06:10</Origintime>
+        <Destinationtime>07:20</Destinationtime>
+        <Status>En Route</Status>
+        <Lastlocation>Arrived Killiney</Lastlocation>
+        <Duein>31</Duein>
+        <Late>0</Late>
+        <Exparrival>06:48</Exparrival>
+        <Expdepart>06:49</Expdepart>
+        <Scharrival>06:48</Scharrival>
+        <Schdepart>06:49</Schdepart>
+        <Direction>Northbound</Direction>
+        <Traintype>DART</Traintype>
+        <Locationtype>S</Locationtype>
+    </objStationData>
+    <objStationData>
+        <Servertime>2022-02-05T06:18:55.867</Servertime>
+        <Traincode>E901 </Traincode>
+        <Stationfullname>Dublin Pearse</Stationfullname>
+        <Stationcode>PERSE</Stationcode>
+        <Querytime>06:18:55</Querytime>
+        <Traindate>05 Feb 2022</Traindate>
+        <Origin>Greystones</Origin>
+        <Destination>Howth</Destination>
+        <Origintime>06:30</Origintime>
+        <Destinationtime>07:48</Destinationtime>
+        <Status>No Information</Status>
+        <Lastlocation />
+        <Duein>59</Duein>
+        <Late>0</Late>
+        <Exparrival>07:16</Exparrival>
+        <Expdepart>07:17</Expdepart>
+        <Scharrival>07:16</Scharrival>
+        <Schdepart>07:17</Schdepart>
+        <Direction>Northbound</Direction>
+        <Traintype>DART</Traintype>
+        <Locationtype>S</Locationtype>
+    </objStationData>
+    <objStationData>
+        <Servertime>2022-02-05T06:18:55.867</Servertime>
+        <Traincode>E802 </Traincode>
+        <Stationfullname>Dublin Pearse</Stationfullname>
+        <Stationcode>PERSE</Stationcode>
+        <Querytime>06:18:55</Querytime>
+        <Traindate>05 Feb 2022</Traindate>
+        <Origin>Bray</Origin>
+        <Destination>Malahide</Destination>
+        <Origintime>06:55</Origintime>
+        <Destinationtime>08:04</Destinationtime>
+        <Status>No Information</Status>
+        <Lastlocation />
+        <Duein>74</Duein>
+        <Late>0</Late>
+        <Exparrival>07:31</Exparrival>
+        <Expdepart>07:32</Expdepart>
+        <Scharrival>07:31</Scharrival>
+        <Schdepart>07:32</Schdepart>
+        <Direction>Northbound</Direction>
+        <Traintype>DART</Traintype>
+        <Locationtype>S</Locationtype>
+    </objStationData>
+    <objStationData>
+        <Servertime>2022-02-05T06:18:55.867</Servertime>
+        <Traincode>E201 </Traincode>
+        <Stationfullname>Dublin Pearse</Stationfullname>
+        <Stationcode>PERSE</Stationcode>
+        <Querytime>06:18:55</Querytime>
+        <Traindate>05 Feb 2022</Traindate>
+        <Origin>Dublin Connolly</Origin>
+        <Destination>Bray</Destination>
+        <Origintime>06:55</Origintime>
+        <Destinationtime>07:39</Destinationtime>
+        <Status>No Information</Status>
+        <Lastlocation />
+        <Duein>42</Duein>
+        <Late>0</Late>
+        <Exparrival>06:59</Exparrival>
+        <Expdepart>07:00</Expdepart>
+        <Scharrival>06:59</Scharrival>
+        <Schdepart>07:00</Schdepart>
+        <Direction>Southbound</Direction>
+        <Traintype>DART</Traintype>
+        <Locationtype>S</Locationtype>
+    </objStationData>
+    <objStationData>
+        <Servertime>2022-02-05T06:18:55.867</Servertime>
+        <Traincode>E202 </Traincode>
+        <Stationfullname>Dublin Pearse</Stationfullname>
+        <Stationcode>PERSE</Stationcode>
+        <Querytime>06:18:55</Querytime>
+        <Traindate>05 Feb 2022</Traindate>
+        <Origin>Howth</Origin>
+        <Destination>Bray</Destination>
+        <Origintime>06:45</Origintime>
+        <Destinationtime>07:56</Destinationtime>
+        <Status>No Information</Status>
+        <Lastlocation />
+        <Duein>59</Duein>
+        <Late>0</Late>
+        <Exparrival>07:15</Exparrival>
+        <Expdepart>07:17</Expdepart>
+        <Scharrival>07:15</Scharrival>
+        <Schdepart>07:17</Schdepart>
+        <Direction>Southbound</Direction>
+        <Traintype>DART</Traintype>
+        <Locationtype>S</Locationtype>
+    </objStationData>
+    <objStationData>
+        <Servertime>2022-02-05T06:18:55.867</Servertime>
+        <Traincode>E102 </Traincode>
+        <Stationfullname>Dublin Pearse</Stationfullname>
+        <Stationcode>PERSE</Stationcode>
+        <Querytime>06:18:55</Querytime>
+        <Traindate>05 Feb 2022</Traindate>
+        <Origin>Malahide</Origin>
+        <Destination>Greystones</Destination>
+        <Origintime>07:00</Origintime>
+        <Destinationtime>08:21</Destinationtime>
+        <Status>No Information</Status>
+        <Lastlocation />
+        <Duein>72</Duein>
+        <Late>0</Late>
+        <Exparrival>07:29</Exparrival>
+        <Expdepart>07:30</Expdepart>
+        <Scharrival>07:29</Scharrival>
+        <Schdepart>07:30</Schdepart>
+        <Direction>Southbound</Direction>
+        <Traintype>DART</Traintype>
+        <Locationtype>S</Locationtype>
+    </objStationData>
+    <objStationData>
+        <Servertime>2022-02-05T06:18:55.867</Servertime>
+        <Traincode>E203 </Traincode>
+        <Stationfullname>Dublin Pearse</Stationfullname>
+        <Stationcode>PERSE</Stationcode>
+        <Querytime>06:18:55</Querytime>
+        <Traindate>05 Feb 2022</Traindate>
+        <Origin>Howth</Origin>
+        <Destination>Bray</Destination>
+        <Origintime>07:15</Origintime>
+        <Destinationtime>08:26</Destinationtime>
+        <Status>No Information</Status>
+        <Lastlocation />
+        <Duein>89</Duein>
+        <Late>0</Late>
+        <Exparrival>07:46</Exparrival>
+        <Expdepart>07:47</Expdepart>
+        <Scharrival>07:46</Scharrival>
+        <Schdepart>07:47</Schdepart>
+        <Direction>Southbound</Direction>
+        <Traintype>DART</Traintype>
+        <Locationtype>S</Locationtype>
+    </objStationData>
+</ArrayOfObjStationData>

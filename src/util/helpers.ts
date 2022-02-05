@@ -8,7 +8,8 @@ export function parseResponse<T>(data: string, modelName: string): T[] {
       new XMLParser().parse(data)?.[`ArrayOf${modelName}`]?.[
         camelCase(modelName)
       ] || [],
-    ].flat()
+    ].flat(),
+    { deep: true }
   );
 }
 

@@ -12,5 +12,11 @@ module.exports = {
     "\\.(css|scss|less)$": "identity-obj-proxy",
     "^lodash-es$": "lodash",
   },
+  transformIgnorePatterns: [
+    '<rootDir>/node_modules/(?!(' +
+    'lodash-es' +
+    '|vue-axios' +
+    '))'
+  ],
   setupFiles: ["./tests/setup.ts"],
 };

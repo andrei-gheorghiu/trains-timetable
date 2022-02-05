@@ -32,25 +32,25 @@ export interface StationByCodeRequest {
 }
 
 export interface StationData {
-  serverTime: string;
-  trainCode: string;
-  stationFullName: string;
-  stationCode: string;
-  queryTime: string;
-  trainDate: string;
+  servertime: string;
+  traincode: string;
+  stationfullname: string;
+  stationcode: string;
+  querytime: string;
+  traindate: string;
   origin: string;
   destination: string;
-  originTime: string;
-  destinationTime: string;
+  origintime: string;
+  destinationtime: string;
   status: string;
-  lastLocation: string;
+  lastlocation: string;
   duein: string;
   late: string;
-  expArrival: string;
-  expDepart: string;
-  schArrival: string;
-  schDepart: string;
+  exparrival: string;
+  expdepart: string;
+  scharrival: string;
+  schdepart: string;
   direction: string;
-  trainType: TrainType;
-  locationType: LocationType;
+  traintype: TrainType;
+  locationtype: LocationType;
 }

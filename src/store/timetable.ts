@@ -58,7 +58,10 @@ export const useTimetable = defineStore("timetable", {
           }
         )
         .then((r) => {
-          this.stationData = parseResponse(r.data, "ObjStationData");
+          this.stationData = parseResponse<StationData>(
+            r.data,
+            "ObjStationData"
+          );
         });
     },
     async fetchStationByCode(params: StationByCodeRequest) {
