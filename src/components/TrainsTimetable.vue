@@ -22,6 +22,7 @@
             <th>Destination</th>
             <th>Direction</th>
             <th>Due in</th>
+            <th>Delay</th>
           </tr>
         </thead>
         <tbody v-if="filteredStationData.length">
@@ -30,6 +31,7 @@
             <td v-text="record.destination" />
             <td v-text="record.direction" />
             <td v-text="humanizeMinutes(+record.duein)" />
+            <td v-text="humanizeMinutes(+record.late)" />
           </tr>
         </tbody>
         <tbody v-else>
@@ -73,9 +75,8 @@ import {
 import vSelect from "vue-select";
 import { useTimetable } from "@/store";
 import { Station, StationData, Train } from "@/types";
-import { baseDirections } from "@/util/helpers";
+import { baseDirections, englishHumanizer } from "@/util/helpers";
 import gsap, { Power0 } from "gsap";
-import humanize from "humanize-duration";
 
 interface TrainsTimetableState {
   trains: Train[];
@@ -160,7 +161,8 @@ export default defineComponent({
       }
     };
     const getStationLabel = (item: Station) => item.stationDesc;
-    const humanizeMinutes = (n: number) => humanize(n * 6e4);
+    const humanizeMinutes = (n: number) =>
+      (n >= 0 ? "" : "-") + (n === 0 ? "" : englishHumanizer(n * 6e4));
     const reduceDirection = (item: GenericOption) => item.value;
     watch(() => state.currentStation, updateStation);
     return {

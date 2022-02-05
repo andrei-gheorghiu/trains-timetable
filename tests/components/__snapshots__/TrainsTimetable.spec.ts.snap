@@ -18,6 +18,7 @@ exports[`TrainsTimetable.vue should render without errors 1`] = `
           <th>Destination</th>
           <th>Direction</th>
           <th>Due in</th>
+          <th>Delay</th>
         </tr>
       </thead>
       <tbody>
