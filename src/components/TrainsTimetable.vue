@@ -30,8 +30,20 @@
             <td v-text="key + 1" />
             <td v-text="record.destination" />
             <td v-text="record.direction" />
-            <td v-text="humanizeMinutes(+record.duein)" />
-            <td v-text="humanizeMinutes(+record.late)" />
+            <td>
+              <span
+                v-if="humanizeMinutes(+record.duein)"
+                v-text="humanizeMinutes(+record.duein)"
+              />
+              <span v-else>0 m</span>
+            </td>
+            <td>
+              <span
+                v-if="humanizeMinutes(+record.late)"
+                v-text="humanizeMinutes(+record.late)"
+              />
+              <code v-else>--</code>
+            </td>
           </tr>
         </tbody>
         <tbody v-else>
@@ -208,6 +220,9 @@ export default defineComponent({
   :deep(.vs__search) {
     padding-left: 12px;
   }
+}
+code {
+  color: rgba(255, 255, 255, 0.42);
 }
 :deep(input::placeholder) {
   font-style: italic;
