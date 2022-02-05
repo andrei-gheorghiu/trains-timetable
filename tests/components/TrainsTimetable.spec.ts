@@ -3,7 +3,6 @@ import TrainsTimetable from "@/components/TrainsTimetable.vue";
 import { createTestingPinia, TestingPinia } from "@pinia/testing";
 import axios from "../__mocks__/axios";
 import { createPinia, getActivePinia, Pinia } from "pinia";
-import * as fs from "fs";
 import { irishRailApi } from "../../src/util/irishRail.api";
 import { readFileSync } from "fs";
 import { useTimetable } from "../../src/store";
@@ -42,7 +41,7 @@ describe("TrainsTimetable.vue", () => {
     wrapper = factory(store);
     axios.mockResponse(
       {
-        data: fs.readFileSync(__dirname + "/../test-data/getAllStations.xml"),
+        data: readFileSync(__dirname + "/../test-data/getAllStations.xml"),
         status: 200,
         statusText: "OK",
         headers: {},
@@ -65,7 +64,7 @@ describe("TrainsTimetable.vue", () => {
     wrapper = factory(store);
     axios.mockResponse(
       {
-        data: fs.readFileSync(__dirname + "/../test-data/getAllStations.xml"),
+        data: readFileSync(__dirname + "/../test-data/getAllStations.xml"),
         status: 200,
         statusText: "OK",
         headers: {},
@@ -82,7 +81,7 @@ describe("TrainsTimetable.vue", () => {
     });
     axios.mockResponse(
       {
-        data: fs.readFileSync(
+        data: readFileSync(
           __dirname + "/../test-data/getStationDataByCode.xml"
         ),
         status: 200,
@@ -95,7 +94,7 @@ describe("TrainsTimetable.vue", () => {
     await flushPromises();
     expect(wrapper.vm.stationData).toEqual(
       JSON.parse(
-        fs.readFileSync(__dirname + "/../test-data/stationData.json").toString()
+        readFileSync(__dirname + "/../test-data/stationData.json").toString()
       )
     );
   });
@@ -103,7 +102,7 @@ describe("TrainsTimetable.vue", () => {
     const pinia = getActivePinia();
     const tt = useTimetable(pinia);
     const stationData = JSON.parse(
-      fs.readFileSync(__dirname + "/../test-data/stationData.json").toString()
+      readFileSync(__dirname + "/../test-data/stationData.json").toString()
     );
     Object.assign(tt, { stationData });
     expect(wrapper.vm.currentDirection).toEqual("Southbound");
